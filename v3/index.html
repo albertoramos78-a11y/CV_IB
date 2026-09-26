@@ -392,7 +392,8 @@ footer a:hover{color:var(--black)}
 .motion .kicker .bar{transform:scaleX(0);transition:transform 1.1s var(--ease) .2s}
 .motion .in .kicker .bar,.motion .kicker.in .bar{transform:scaleX(1)}
 
-.motion .hero h1 .row{overflow:hidden;padding-bottom:.06em;margin-bottom:-.06em}
+.motion .hero h1 .row{overflow:hidden;padding:.2em .1em .14em;margin:-.2em -.1em -.14em}
+.motion .hero h1 .row + .row{padding-left:calc(.1em + clamp(.3em, 8vw, 1.1em))}
 .motion .hero h1 .row > span{transform:translateY(105%);animation:rise 1.3s var(--ease) .1s forwards}
 .motion .hero h1 .row + .row > span{animation-delay:.24s}
 .motion .hero-top li,.motion .hero-foot > *{opacity:0;animation:fade 1.1s var(--ease) forwards}
